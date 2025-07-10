@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:19:14 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/10 17:44:11 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/10 18:02:35 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void ClapTrap::setAttackDamage(unsigned int amount)
 
 void ClapTrap::attack(const std::string& target)
 {
-	if(health == 0 || energy == 0)
+	if (health == 0 || energy == 0)
 		std::cout << "ClapTrap " << name << " can not attack. It has: " << health <<" health points and "<< energy << " energy points !!!\n";
 	else
 	{
@@ -76,8 +76,28 @@ void ClapTrap::attack(const std::string& target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
+	if (health == 0)
+	{
+		std::cout << "ClapTrap "<< name << " is Destroyed!\n";
+		return ; 
+	}
+	if (amount >= health)
+		health = 0;
+	else
+		health -= amount;
+	std::cout << "ClapTrap "<< name << " takes " << amount << " points of damage!\n";
+	std::cout << "Current Health: " << health << " points\n"; 
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
+	if (energy == 0)
+		std::cout << "ClapTrap" << name << " can not repair itself no more energy!\n";
+	if (health == 0)
+		std::cout << "ClapTrap" << name << " i'ts Destroyed!\n";
+	energy--;
+	health += amount;
+	std::cout << "ClapTrap "<< name << " repair itself with " << amount << " points of health!\n";
+	std::cout << "Current Health: " << health << " points\n";
+	std::cout << "Energy status: " << energy << " points\n"; 
 }
