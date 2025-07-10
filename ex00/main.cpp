@@ -6,14 +6,18 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:03:14 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/09 16:10:13 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/10 17:22:57 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "ClapTrap.hpp"
 
 int main()
 {
-	std::cout << "testt";
+	ClapTrap bob("Bobi");
+	ClapTrap jiji("Xhixhi");
+
+	bob.setAttackDamage(2);
+	bob.attack("Xhixhi");
 	return 0;
 }

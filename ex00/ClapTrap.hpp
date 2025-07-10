@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:14:40 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/10 16:33:22 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/10 16:52:12 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class ClapTrap
 		void	beRepaired(unsigned int amount);
 		//getter & setter
 		unsigned int	getAttackDamage(void);
-		unsigned int	setAttackDamage(unsigned int amount);
+		void	setAttackDamage(unsigned int amount);
 };
 
 
