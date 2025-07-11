@@ -6,7 +6,17 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 18:10:53 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/10 18:10:54 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/11 18:00:08 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap()
+{
+	name = "";
+	energy = 50;
+	health = 100;
+	setAttackDamage(20);
+}
 
