@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 18:10:53 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/11 18:30:52 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/11 18:32:19 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ ScavTrap::~ScavTrap()
 void ScavTrap::attack(const std::string& target)
 {
 	if (health == 0 || energy == 0)
-		std::cout << "ScavpTrap " << name << " can not attack!!!\n";
+		std::cout << "ScavTrap " << name << " can not attack!!!\n";
 	else
 	{
 		energy--;
