@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 18:10:53 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/11 18:20:42 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/11 18:28:01 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ ScavTrap::ScavTrap() : ClapTrap()
 ScavTrap:: ScavTrap(std::string _name): ClapTrap(_name)
 {
 	std::cout << "ScavTrap Parameter constructor called\n";
-	name = _name;
+	// name = _name;
 	energy = 50;
 	health = 100;
 	setAttackDamage(20);
@@ -46,5 +46,17 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 ScavTrap::~ScavTrap()
 {
 	std::cout << "ScavTrap Destructor called\n";
-	ClapTrap::~ClapTrap();
+	// ClapTrap::~ClapTrap();
 }
+
+void ScavTrap::attack(const std::string& target)
+{
+	if (health == 0 || energy == 0)
+		std::cout << "ScavpTrap " << name << " can not attack!!!\n";
+	else
+	{
+		energy--;
+		std::cout << "ScavTrap " << name << " attacks " << target << " causing " << attack_damage << " points of damage!!!\n"; 
+	}
+}
+
