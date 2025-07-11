@@ -6,7 +6,14 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:03:20 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/09 16:03:21 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/11 18:42:19 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ClapTrap.hpp"
+
+int main ()
+{
+	
+	return 0;
+}
