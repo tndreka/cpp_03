@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 18:10:53 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/11 18:28:01 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/11 18:30:52 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,3 +60,7 @@ void ScavTrap::attack(const std::string& target)
 	}
 }
 
+void ScavTrap::guardGate()
+{
+	std::cout << "ScavTrap " << name << " is now in Gate keeping mode!\n";
+}
