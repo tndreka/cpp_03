@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
+/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:19:14 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/13 04:35:50 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 18:50:32 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap()
 {
-	std::cout << "Default constructor called\n";
+	std::cout << "ClapTrap Default constructor called\n";
 	name = "";
 	health = 10;
 	energy = 10;
@@ -23,7 +23,7 @@ ClapTrap::ClapTrap()
 
 ClapTrap::ClapTrap(std::string _name)
 {
-	std::cout << "Parameter Clap Trap constructor called\n";
+	std::cout << " Clap Trap Parameter constructor called\n";
 	name = _name;
 	health = 10;
 	energy = 10;
@@ -51,10 +51,10 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Destructor called\n";
+	std::cout << "ClapTrap "<< name <<  " destroyed\n";
 }
 
-unsigned int ClapTrap::getAttackDamage(void)
+unsigned int ClapTrap::getAttackDamage(void) const
 {
 	return attack_damage;
 }

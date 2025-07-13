@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
+/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 20:14:29 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/13 04:45:02 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 18:51:29 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ FragTrap::FragTrap() : ClapTrap()
 	setAttackDamage(30);
 }
 
-FragTrap:: FragTrap(std::string _name): ClapTrap(_name)
+FragTrap::FragTrap(std::string _name): ClapTrap(_name)
 {
 	std::cout << "FragTrap Parameter constructor called\n";
 	energy = 100;
@@ -36,7 +36,7 @@ FragTrap:: FragTrap(const FragTrap& other) : ClapTrap(other)
 
 FragTrap& FragTrap::operator=(const FragTrap& other)
 {
-	std::cout << "FragTrap Copy assign operator called\n";
+	std::cout << "FragTrap Copy assignment operator called\n";
 	if (this != &other)
 		ClapTrap::operator=(other);
 	return *this;	
@@ -44,10 +44,9 @@ FragTrap& FragTrap::operator=(const FragTrap& other)
 
 FragTrap::~FragTrap()
 {
-	std::cout << "FragTrap Destructor called\n";
-}
+	std::cout << "FragTrap "<< name <<  " destroyed\n";}
 
 void FragTrap::highFiveGuys(void)
 {
-	std::cout << "FragTrap " << name << " requested a high five !\n"; 
+	std::cout << "FragTrap " << name << " is requesting a high five !\n"; 
 }

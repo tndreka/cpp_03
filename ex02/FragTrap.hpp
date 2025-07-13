@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 18:43:07 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/11 20:18:11 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 18:27:31 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ public:
 	FragTrap(const FragTrap& other);
 	FragTrap& operator=(const FragTrap& other);
 	~FragTrap();
-
+	void attack(const std::string &target);
 	void highFiveGuys(void);
 };
 

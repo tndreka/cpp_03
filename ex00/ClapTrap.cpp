@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
+/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:19:14 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/13 04:15:37 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 18:44:54 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,10 +51,10 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Destructor called\n";
+	std::cout << "ClapTrap "<< name <<  " destroyed\n";
 }
 
-unsigned int ClapTrap::getAttackDamage(void)
+unsigned int ClapTrap::getAttackDamage(void) const
 {
 	return attack_damage;
 }

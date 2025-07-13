@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
+/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:14:40 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/13 04:52:45 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 18:41:44 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class ClapTrap
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 		//getter & setter
-		unsigned int	getAttackDamage(void);
+		unsigned int getAttackDamage(void) const;
 		void	setAttackDamage(unsigned int amount);
 };
 
