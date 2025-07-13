@@ -3,21 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
+/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:03:17 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/11 15:59:16 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 04:31:02 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-	ClapTrap bob("Bobi");
-	ClapTrap jiji("Xhixhi");
+	//ScavTrap creation
+	ScavTrap temp("Trap_guardian");
+	std::cout<<std::endl;
 
-	bob.setAttackDamage(2);
-	bob.attack("Xhixhi");
+	//attack 
+	ScavTrap temp1("guardian");
+	temp1.attack("Enemy");
+	std::cout<<std::endl;
+
+	//special ability
+	temp.guardGate();
+	std::cout<<std::endl;
+
+	//testing inherited methods
+	temp.takeDamage(30);
+	temp.beRepaired(15);
+	std::cout<<std::endl;
+
 	return 0;
 }

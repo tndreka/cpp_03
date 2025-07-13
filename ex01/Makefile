@@ -1,27 +1,27 @@
-NAME = PROGRAM
+NAME = SCAV_TRAP
 
 CPP = c++
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-		$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
+	$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 %.o: %.cpp
-		$(CPP) $(CPPFLAGS) -c $< -o $@
+	$(CPP) $(CPPFLAGS) -c $< -o $@
 
 clean:
 	@rm -f $(OBJ)
 
-fclean:
+fclean: clean
 	@rm -f $(NAME)
 
-re:fclean all
+re: fclean all
 
 .PHONY: all clean fclean re

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
+/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:19:14 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/10 18:07:35 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 04:35:39 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap()
 {
-	std::cout << "Default constructor called\n";
+	std::cout << "Default ClapTrap constructor called\n";
 	name = "";
 	health = 10;
 	energy = 10;
@@ -23,6 +23,7 @@ ClapTrap::ClapTrap()
 
 ClapTrap::ClapTrap(std::string _name)
 {
+	std::cout << "Parameter Clap Trap constructor called\n";
 	name = _name;
 	health = 10;
 	energy = 10;
