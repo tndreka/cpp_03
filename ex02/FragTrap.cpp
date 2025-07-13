@@ -6,7 +6,7 @@
 /*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 20:14:29 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/13 18:56:20 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 19:12:03 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ FragTrap::FragTrap(std::string _name): ClapTrap(_name)
 	setAttackDamage(30);
 }
 
-FragTrap:: FragTrap(const FragTrap& other) : ClapTrap(other)
+FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other)
 {
 	std::cout << "FragTrap Copy constructor called\n";
 }
@@ -46,7 +46,7 @@ FragTrap::~FragTrap()
 {
 	std::cout << "FragTrap "<< name <<  " destroyed\n";}
 
-void FragTrap::highFiveGuys(void)
+void FragTrap::highFivesGuys(void)
 {
 	std::cout << "FragTrap " << name << " is requesting a high five !\n"; 
 }
@@ -54,10 +54,10 @@ void FragTrap::highFiveGuys(void)
 void FragTrap::attack(const std::string& target)
 {
 	if (health == 0 || energy == 0)
-		std::cout << "ScavTrap " << name << " cannot attack!!!\n";
+		std::cout << "FragTrap " << name << " cannot attack!!!\n";
 	else
 	{
 		energy--;
-		std::cout << "ScavTrap " << name << " attacks " << target << " causing " << attack_damage << " points of damage!!!\n"; 
+		std::cout << "FragTrap " << name << " attacks " << target << " causing " << attack_damage << " points of damage!!!\n"; 
 	}
 }
