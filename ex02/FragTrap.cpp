@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
+/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 20:14:29 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/11 20:25:28 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 04:45:02 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 FragTrap::FragTrap() : ClapTrap()
 {
 	std::cout << "FragTrap Default constructor called\n";
-	name = "";
 	energy = 100;
 	health = 100;
 	setAttackDamage(30);
@@ -25,7 +24,6 @@ FragTrap::FragTrap() : ClapTrap()
 FragTrap:: FragTrap(std::string _name): ClapTrap(_name)
 {
 	std::cout << "FragTrap Parameter constructor called\n";
-	// name = _name;
 	energy = 100;
 	health = 100;
 	setAttackDamage(30);

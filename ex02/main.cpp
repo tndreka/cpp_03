@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
+/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:03:20 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/11 18:44:09 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 04:44:32 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,25 @@
 
 int main ()
 {
+	//test case 1
 	
+	FragTrap f1("Jocker");
+
+	//test 2: copy operation
+	FragTrap f2(f1);
+	FragTrap f3("boss");
+	f3 = f1;
+
+	//test 3: Attack
+	f1.attack("Enemy");
+
+	//test 4: Special ability
+	f1.highFiveGuys();
+
+	//test 5: Inherited methods
+	f1.takeDamage(50);
+	f1.beRepaired(30);
+
+	//
 	return 0;
 }
