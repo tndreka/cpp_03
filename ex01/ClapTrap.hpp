@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tndreka < tndreka@student.42heilbronn.d    +#+  +:+       +#+        */
+/*   By: tndreka <tndreka@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 16:14:40 by tndreka           #+#    #+#             */
-/*   Updated: 2025/07/11 16:05:46 by tndreka          ###   ########.fr       */
+/*   Updated: 2025/07/13 04:52:45 by tndreka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class ClapTrap
 {
-	protected:
+	protected: // Allows the derived classes to access these atributes 
 		std::string name;
 		unsigned int health;
 		unsigned int energy;
